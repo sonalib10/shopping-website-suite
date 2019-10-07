@@ -9,7 +9,6 @@ This test suit is supposed to be executed on Windows Platform.
 
 ```
 git clone https://github.com/sonalib10/shopping-website-suite
-
 ```
 
 ### Execute test suite
