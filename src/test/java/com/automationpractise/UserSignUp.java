@@ -10,9 +10,9 @@ public class UserSignUp extends Driver {
 
     private SignUpPage signUpPage;
 
-    @Given("User go to shopping website")
-    public void userGoToShoppingWebsite() {
-        initializeBrowser("Firefox");
+    @Given("User go to shopping website of {string}")
+    public void userGoToShoppingWebsite(String browser) {
+        initializeBrowser(browser);
         signUpPage = new SignUpPage();
         signUpPage.navigateToURL();
     }

@@ -21,8 +21,9 @@ public class Driver {
         capabilities = new DesiredCapabilities();
         switch (browser) {
             case "Chrome":
-                System.setProperty("webdriver.chrome.driver", "");
-                driver = new ChromeDriver();
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                driver = new ChromeDriver();driver.manage().window().maximize();
+
                 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 break;
             case "Firefox":

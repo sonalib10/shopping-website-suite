@@ -3,7 +3,7 @@ Feature: User creates new account on the website
 
 @regression
 Scenario: Signup new user
-    Given User go to shopping website
+    Given User go to shopping website of "Chrome"
     Then User should land to shopping website
     And navigates to Signup page to enter email ID
     When user fills the signup form and register
@@ -11,7 +11,7 @@ Scenario: Signup new user
 
 @smoke
 Scenario: SignIn Error for existing user
-  Given User go to shopping website
+  Given User go to shopping website of "Chrome"
   Then User should land to shopping website
   And navigates to Signup page to enter email ID
   Then throws error for existing user email ID

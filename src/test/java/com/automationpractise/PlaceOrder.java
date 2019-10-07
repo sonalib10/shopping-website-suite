@@ -10,9 +10,9 @@ public class PlaceOrder extends Driver {
 
     private SignUpPage signUpPage;
 
-    @Given("^user is on Home page$")
-    public void userIsOnHomePage() {
-        initializeBrowser("Firefox");
+    @Given("user is on Home page of {string}")
+    public void userIsOnHomePage(String browser) {
+        initializeBrowser(browser);
         signUpPage = new SignUpPage();
         signUpPage.navigateToURL();
         Assertions.assertLandingPage();
